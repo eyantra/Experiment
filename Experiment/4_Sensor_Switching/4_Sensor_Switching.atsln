@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "4_Sensor_Switching", "4_Sensor_Switching\4_Sensor_Switching.cproj", "{0157C5A4-1865-4419-AB61-80A96185BD3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0157C5A4-1865-4419-AB61-80A96185BD3B}.Debug|AVR.ActiveCfg = Debug|AVR
+		{0157C5A4-1865-4419-AB61-80A96185BD3B}.Debug|AVR.Build.0 = Debug|AVR
+		{0157C5A4-1865-4419-AB61-80A96185BD3B}.Release|AVR.ActiveCfg = Release|AVR
+		{0157C5A4-1865-4419-AB61-80A96185BD3B}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

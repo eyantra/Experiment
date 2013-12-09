@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "13C_Serial_Communication_ZigBee_wireless", "13C_Serial_Communication_ZigBee_wireless\13C_Serial_Communication_ZigBee_wireless.cproj", "{0A9F47C0-709D-4E04-AC89-16992B8197C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A9F47C0-709D-4E04-AC89-16992B8197C9}.Debug|AVR.ActiveCfg = Debug|AVR
+		{0A9F47C0-709D-4E04-AC89-16992B8197C9}.Debug|AVR.Build.0 = Debug|AVR
+		{0A9F47C0-709D-4E04-AC89-16992B8197C9}.Release|AVR.ActiveCfg = Release|AVR
+		{0A9F47C0-709D-4E04-AC89-16992B8197C9}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

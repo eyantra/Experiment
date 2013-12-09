@@ -1,0 +1,390 @@
+
+13B_Serial_Communication_USB-RS232.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         0000024a  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .bss          00000001  00800200  00800200  000002be  2**0
+                  ALLOC
+  2 .stab         000006e4  00000000  00000000  000002c0  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  3 .stabstr      00000085  00000000  00000000  000009a4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_aranges 00000080  00000000  00000000  00000a30  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000406  00000000  00000000  00000ab0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 0000010f  00000000  00000000  00000eb6  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000002ce  00000000  00000000  00000fc5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  000000ec  00000000  00000000  00001294  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000159  00000000  00000000  00001380  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000109  00000000  00000000  000014d9  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 72 00 	jmp	0xe4	; 0xe4 <__ctors_end>
+   4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+   8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+   c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  10:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  14:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  18:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  1c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  20:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  24:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  28:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  2c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  30:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  34:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  38:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  3c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  40:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  44:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  48:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  4c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  50:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  54:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  58:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  5c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  60:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  64:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  68:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  6c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  70:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  74:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  78:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  7c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  80:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  84:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  88:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  8c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  90:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  94:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  98:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  9c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  a0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  a4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  a8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  ac:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  b0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  b4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  b8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  bc:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  c0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  c4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  c8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  cc:	0c 94 c6 00 	jmp	0x18c	; 0x18c <__vector_51>
+  d0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  d4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  d8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  dc:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  e0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+
+000000e4 <__ctors_end>:
+  e4:	11 24       	eor	r1, r1
+  e6:	1f be       	out	0x3f, r1	; 63
+  e8:	cf ef       	ldi	r28, 0xFF	; 255
+  ea:	d1 e2       	ldi	r29, 0x21	; 33
+  ec:	de bf       	out	0x3e, r29	; 62
+  ee:	cd bf       	out	0x3d, r28	; 61
+  f0:	00 e0       	ldi	r16, 0x00	; 0
+  f2:	0c bf       	out	0x3c, r16	; 60
+
+000000f4 <__do_copy_data>:
+  f4:	12 e0       	ldi	r17, 0x02	; 2
+  f6:	a0 e0       	ldi	r26, 0x00	; 0
+  f8:	b2 e0       	ldi	r27, 0x02	; 2
+  fa:	ea e4       	ldi	r30, 0x4A	; 74
+  fc:	f2 e0       	ldi	r31, 0x02	; 2
+  fe:	00 e0       	ldi	r16, 0x00	; 0
+ 100:	0b bf       	out	0x3b, r16	; 59
+ 102:	02 c0       	rjmp	.+4      	; 0x108 <__do_copy_data+0x14>
+ 104:	07 90       	elpm	r0, Z+
+ 106:	0d 92       	st	X+, r0
+ 108:	a0 30       	cpi	r26, 0x00	; 0
+ 10a:	b1 07       	cpc	r27, r17
+ 10c:	d9 f7       	brne	.-10     	; 0x104 <__do_copy_data+0x10>
+
+0000010e <__do_clear_bss>:
+ 10e:	12 e0       	ldi	r17, 0x02	; 2
+ 110:	a0 e0       	ldi	r26, 0x00	; 0
+ 112:	b2 e0       	ldi	r27, 0x02	; 2
+ 114:	01 c0       	rjmp	.+2      	; 0x118 <.do_clear_bss_start>
+
+00000116 <.do_clear_bss_loop>:
+ 116:	1d 92       	st	X+, r1
+
+00000118 <.do_clear_bss_start>:
+ 118:	a1 30       	cpi	r26, 0x01	; 1
+ 11a:	b1 07       	cpc	r27, r17
+ 11c:	e1 f7       	brne	.-8      	; 0x116 <.do_clear_bss_loop>
+ 11e:	0e 94 20 01 	call	0x240	; 0x240 <main>
+ 122:	0c 94 23 01 	jmp	0x246	; 0x246 <_exit>
+
+00000126 <__bad_interrupt>:
+ 126:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000012a <buzzer_pin_config>:
+
+unsigned char data; //to store received data from UDR1
+
+void buzzer_pin_config (void)
+{
+ DDRC = DDRC | 0x08;		//Setting PORTC 3 as outpt
+ 12a:	3b 9a       	sbi	0x07, 3	; 7
+ PORTC = PORTC & 0xF7;		//Setting PORTC 3 logic low to turnoff buzzer
+ 12c:	43 98       	cbi	0x08, 3	; 8
+}
+ 12e:	08 95       	ret
+
+00000130 <motion_pin_config>:
+
+void motion_pin_config (void)
+{
+ DDRA = DDRA | 0x0F;
+ 130:	81 b1       	in	r24, 0x01	; 1
+ 132:	8f 60       	ori	r24, 0x0F	; 15
+ 134:	81 b9       	out	0x01, r24	; 1
+ PORTA = PORTA & 0xF0;
+ 136:	82 b1       	in	r24, 0x02	; 2
+ 138:	80 7f       	andi	r24, 0xF0	; 240
+ 13a:	82 b9       	out	0x02, r24	; 2
+ DDRL = DDRL | 0x18;   //Setting PL3 and PL4 pins as output for PWM generation
+ 13c:	ea e0       	ldi	r30, 0x0A	; 10
+ 13e:	f1 e0       	ldi	r31, 0x01	; 1
+ 140:	80 81       	ld	r24, Z
+ 142:	88 61       	ori	r24, 0x18	; 24
+ 144:	80 83       	st	Z, r24
+ PORTL = PORTL | 0x18; //PL3 and PL4 pins are for velocity control using PWM.
+ 146:	eb e0       	ldi	r30, 0x0B	; 11
+ 148:	f1 e0       	ldi	r31, 0x01	; 1
+ 14a:	80 81       	ld	r24, Z
+ 14c:	88 61       	ori	r24, 0x18	; 24
+ 14e:	80 83       	st	Z, r24
+}
+ 150:	08 95       	ret
+
+00000152 <port_init>:
+
+//Function to initialize ports
+void port_init()
+{
+	motion_pin_config();
+ 152:	0e 94 98 00 	call	0x130	; 0x130 <motion_pin_config>
+	buzzer_pin_config();
+ 156:	0e 94 95 00 	call	0x12a	; 0x12a <buzzer_pin_config>
+}
+ 15a:	08 95       	ret
+
+0000015c <buzzer_on>:
+
+void buzzer_on (void)
+{
+ unsigned char port_restore = 0;
+ port_restore = PINC;
+ 15c:	86 b1       	in	r24, 0x06	; 6
+ port_restore = port_restore | 0x08;
+ 15e:	88 60       	ori	r24, 0x08	; 8
+ PORTC = port_restore;
+ 160:	88 b9       	out	0x08, r24	; 8
+}
+ 162:	08 95       	ret
+
+00000164 <buzzer_off>:
+
+void buzzer_off (void)
+{
+ unsigned char port_restore = 0;
+ port_restore = PINC;
+ 164:	86 b1       	in	r24, 0x06	; 6
+ port_restore = port_restore & 0xF7;
+ 166:	87 7f       	andi	r24, 0xF7	; 247
+ PORTC = port_restore;
+ 168:	88 b9       	out	0x08, r24	; 8
+}
+ 16a:	08 95       	ret
+
+0000016c <uart2_init>:
+// actual baud rate:9600 (error 0.0%)
+// char size: 8 bit
+// parity: Disabled
+void uart2_init(void)
+{
+ UCSR2B = 0x00; //disable while setting baud rate
+ 16c:	e1 ed       	ldi	r30, 0xD1	; 209
+ 16e:	f0 e0       	ldi	r31, 0x00	; 0
+ 170:	10 82       	st	Z, r1
+ UCSR2A = 0x00;
+ 172:	10 92 d0 00 	sts	0x00D0, r1
+ UCSR2C = 0x06;
+ 176:	86 e0       	ldi	r24, 0x06	; 6
+ 178:	80 93 d2 00 	sts	0x00D2, r24
+ UBRR2L = 0x5F; //set baud rate lo
+ 17c:	8f e5       	ldi	r24, 0x5F	; 95
+ 17e:	80 93 d4 00 	sts	0x00D4, r24
+ UBRR2H = 0x00; //set baud rate hi
+ 182:	10 92 d5 00 	sts	0x00D5, r1
+ UCSR2B = 0x98;
+ 186:	88 e9       	ldi	r24, 0x98	; 152
+ 188:	80 83       	st	Z, r24
+}
+ 18a:	08 95       	ret
+
+0000018c <__vector_51>:
+
+
+SIGNAL(SIG_USART2_RECV) 		// ISR for receive complete interrupt
+{
+ 18c:	1f 92       	push	r1
+ 18e:	0f 92       	push	r0
+ 190:	0f b6       	in	r0, 0x3f	; 63
+ 192:	0f 92       	push	r0
+ 194:	0b b6       	in	r0, 0x3b	; 59
+ 196:	0f 92       	push	r0
+ 198:	11 24       	eor	r1, r1
+ 19a:	2f 93       	push	r18
+ 19c:	3f 93       	push	r19
+ 19e:	4f 93       	push	r20
+ 1a0:	5f 93       	push	r21
+ 1a2:	6f 93       	push	r22
+ 1a4:	7f 93       	push	r23
+ 1a6:	8f 93       	push	r24
+ 1a8:	9f 93       	push	r25
+ 1aa:	af 93       	push	r26
+ 1ac:	bf 93       	push	r27
+ 1ae:	ef 93       	push	r30
+ 1b0:	ff 93       	push	r31
+	data = UDR2; 				//making copy of data from UDR2 in 'data' variable 
+ 1b2:	e6 ed       	ldi	r30, 0xD6	; 214
+ 1b4:	f0 e0       	ldi	r31, 0x00	; 0
+ 1b6:	80 81       	ld	r24, Z
+ 1b8:	80 93 00 02 	sts	0x0200, r24
+
+	UDR2 = data; 				//echo data back to PC
+ 1bc:	80 83       	st	Z, r24
+
+		if(data == 0x38) //ASCII value of 8
+ 1be:	88 33       	cpi	r24, 0x38	; 56
+ 1c0:	11 f4       	brne	.+4      	; 0x1c6 <__vector_51+0x3a>
+		{
+			PORTA=0x06;  //forward
+ 1c2:	86 e0       	ldi	r24, 0x06	; 6
+ 1c4:	82 b9       	out	0x02, r24	; 2
+		}
+
+		if(data == 0x32) //ASCII value of 2
+ 1c6:	80 91 00 02 	lds	r24, 0x0200
+ 1ca:	82 33       	cpi	r24, 0x32	; 50
+ 1cc:	11 f4       	brne	.+4      	; 0x1d2 <__vector_51+0x46>
+		{
+			PORTA=0x09; //back
+ 1ce:	89 e0       	ldi	r24, 0x09	; 9
+ 1d0:	82 b9       	out	0x02, r24	; 2
+		}
+
+		if(data == 0x34) //ASCII value of 4
+ 1d2:	80 91 00 02 	lds	r24, 0x0200
+ 1d6:	84 33       	cpi	r24, 0x34	; 52
+ 1d8:	11 f4       	brne	.+4      	; 0x1de <__vector_51+0x52>
+		{
+			PORTA=0x05;  //left
+ 1da:	85 e0       	ldi	r24, 0x05	; 5
+ 1dc:	82 b9       	out	0x02, r24	; 2
+		}
+
+		if(data == 0x36) //ASCII value of 6
+ 1de:	80 91 00 02 	lds	r24, 0x0200
+ 1e2:	86 33       	cpi	r24, 0x36	; 54
+ 1e4:	11 f4       	brne	.+4      	; 0x1ea <__vector_51+0x5e>
+		{
+			PORTA=0x0A; //right
+ 1e6:	8a e0       	ldi	r24, 0x0A	; 10
+ 1e8:	82 b9       	out	0x02, r24	; 2
+		}
+
+		if(data == 0x35) //ASCII value of 5
+ 1ea:	80 91 00 02 	lds	r24, 0x0200
+ 1ee:	85 33       	cpi	r24, 0x35	; 53
+ 1f0:	09 f4       	brne	.+2      	; 0x1f4 <__vector_51+0x68>
+		{
+			PORTA=0x00; //stop
+ 1f2:	12 b8       	out	0x02, r1	; 2
+		}
+
+		if(data == 0x37) //ASCII value of 7
+ 1f4:	80 91 00 02 	lds	r24, 0x0200
+ 1f8:	87 33       	cpi	r24, 0x37	; 55
+ 1fa:	11 f4       	brne	.+4      	; 0x200 <__vector_51+0x74>
+		{
+			buzzer_on();
+ 1fc:	0e 94 ae 00 	call	0x15c	; 0x15c <buzzer_on>
+		}
+
+		if(data == 0x39) //ASCII value of 9
+ 200:	80 91 00 02 	lds	r24, 0x0200
+ 204:	89 33       	cpi	r24, 0x39	; 57
+ 206:	11 f4       	brne	.+4      	; 0x20c <__vector_51+0x80>
+		{
+			buzzer_off();
+ 208:	0e 94 b2 00 	call	0x164	; 0x164 <buzzer_off>
+		}
+
+}
+ 20c:	ff 91       	pop	r31
+ 20e:	ef 91       	pop	r30
+ 210:	bf 91       	pop	r27
+ 212:	af 91       	pop	r26
+ 214:	9f 91       	pop	r25
+ 216:	8f 91       	pop	r24
+ 218:	7f 91       	pop	r23
+ 21a:	6f 91       	pop	r22
+ 21c:	5f 91       	pop	r21
+ 21e:	4f 91       	pop	r20
+ 220:	3f 91       	pop	r19
+ 222:	2f 91       	pop	r18
+ 224:	0f 90       	pop	r0
+ 226:	0b be       	out	0x3b, r0	; 59
+ 228:	0f 90       	pop	r0
+ 22a:	0f be       	out	0x3f, r0	; 63
+ 22c:	0f 90       	pop	r0
+ 22e:	1f 90       	pop	r1
+ 230:	18 95       	reti
+
+00000232 <init_devices>:
+
+
+//Function To Initialize all The Devices
+void init_devices()
+{
+ cli(); //Clears the global interrupts
+ 232:	f8 94       	cli
+ port_init();  //Initializes all the ports
+ 234:	0e 94 a9 00 	call	0x152	; 0x152 <port_init>
+ uart2_init(); //Initailize UART1 for serial communiaction
+ 238:	0e 94 b6 00 	call	0x16c	; 0x16c <uart2_init>
+ sei();   //Enables the global interrupts
+ 23c:	78 94       	sei
+}
+ 23e:	08 95       	ret
+
+00000240 <main>:
+
+//Main Function
+int main(void)
+{
+	init_devices();
+ 240:	0e 94 19 01 	call	0x232	; 0x232 <init_devices>
+ 244:	ff cf       	rjmp	.-2      	; 0x244 <main+0x4>
+
+00000246 <_exit>:
+ 246:	f8 94       	cli
+
+00000248 <__stop_program>:
+ 248:	ff cf       	rjmp	.-2      	; 0x248 <__stop_program>

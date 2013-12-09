@@ -1,0 +1,372 @@
+
+4_Sensor_Switching.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         0000022c  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .stab         000006e4  00000000  00000000  00000280  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  2 .stabstr      00000085  00000000  00000000  00000964  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_aranges 00000080  00000000  00000000  000009f0  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_info   000005a3  00000000  00000000  00000a70  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_abbrev 00000140  00000000  00000000  00001013  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_line   00000368  00000000  00000000  00001153  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_frame  000000d4  00000000  00000000  000014bc  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_str    000001ea  00000000  00000000  00001590  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 72 00 	jmp	0xe4	; 0xe4 <__ctors_end>
+   4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+   8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+   c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  10:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  14:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  18:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  1c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  20:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  24:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  28:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  2c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  30:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  34:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  38:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  3c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  40:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  44:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  48:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  4c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  50:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  54:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  58:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  5c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  60:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  64:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  68:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  6c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  70:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  74:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  78:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  7c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  80:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  84:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  88:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  8c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  90:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  94:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  98:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  9c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  a0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  a4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  a8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  ac:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  b0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  b4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  b8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  bc:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  c0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  c4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  c8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  cc:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  d0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  d4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  d8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  dc:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  e0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+
+000000e4 <__ctors_end>:
+  e4:	11 24       	eor	r1, r1
+  e6:	1f be       	out	0x3f, r1	; 63
+  e8:	cf ef       	ldi	r28, 0xFF	; 255
+  ea:	d1 e2       	ldi	r29, 0x21	; 33
+  ec:	de bf       	out	0x3e, r29	; 62
+  ee:	cd bf       	out	0x3d, r28	; 61
+  f0:	00 e0       	ldi	r16, 0x00	; 0
+  f2:	0c bf       	out	0x3c, r16	; 60
+
+000000f4 <__do_copy_data>:
+  f4:	12 e0       	ldi	r17, 0x02	; 2
+  f6:	a0 e0       	ldi	r26, 0x00	; 0
+  f8:	b2 e0       	ldi	r27, 0x02	; 2
+  fa:	ec e2       	ldi	r30, 0x2C	; 44
+  fc:	f2 e0       	ldi	r31, 0x02	; 2
+  fe:	00 e0       	ldi	r16, 0x00	; 0
+ 100:	0b bf       	out	0x3b, r16	; 59
+ 102:	02 c0       	rjmp	.+4      	; 0x108 <__do_copy_data+0x14>
+ 104:	07 90       	elpm	r0, Z+
+ 106:	0d 92       	st	X+, r0
+ 108:	a0 30       	cpi	r26, 0x00	; 0
+ 10a:	b1 07       	cpc	r27, r17
+ 10c:	d9 f7       	brne	.-10     	; 0x104 <__do_copy_data+0x10>
+
+0000010e <__do_clear_bss>:
+ 10e:	12 e0       	ldi	r17, 0x02	; 2
+ 110:	a0 e0       	ldi	r26, 0x00	; 0
+ 112:	b2 e0       	ldi	r27, 0x02	; 2
+ 114:	01 c0       	rjmp	.+2      	; 0x118 <.do_clear_bss_start>
+
+00000116 <.do_clear_bss_loop>:
+ 116:	1d 92       	st	X+, r1
+
+00000118 <.do_clear_bss_start>:
+ 118:	a0 30       	cpi	r26, 0x00	; 0
+ 11a:	b1 07       	cpc	r27, r17
+ 11c:	e1 f7       	brne	.-8      	; 0x116 <.do_clear_bss_loop>
+ 11e:	0e 94 d4 00 	call	0x1a8	; 0x1a8 <main>
+ 122:	0c 94 14 01 	jmp	0x228	; 0x228 <_exit>
+
+00000126 <__bad_interrupt>:
+ 126:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000012a <MOSFET_switch_config>:
+
+
+//MOSFET switch port configuration
+void MOSFET_switch_config (void)
+{
+ DDRH = DDRH | 0x0C; //make PORTH 3 and PORTH 1 pins as output
+ 12a:	e1 e0       	ldi	r30, 0x01	; 1
+ 12c:	f1 e0       	ldi	r31, 0x01	; 1
+ 12e:	80 81       	ld	r24, Z
+ 130:	8c 60       	ori	r24, 0x0C	; 12
+ 132:	80 83       	st	Z, r24
+ PORTH = PORTH & 0xF3; //set PORTH 3 and PORTH 1 pins to 0
+ 134:	e2 e0       	ldi	r30, 0x02	; 2
+ 136:	f1 e0       	ldi	r31, 0x01	; 1
+ 138:	80 81       	ld	r24, Z
+ 13a:	83 7f       	andi	r24, 0xF3	; 243
+ 13c:	80 83       	st	Z, r24
+
+ DDRG = DDRG | 0x04; //make PORTG 2 pin as output
+ 13e:	9a 9a       	sbi	0x13, 2	; 19
+ PORTG = PORTG & 0xFB; //set PORTG 2 pin to 0
+ 140:	a2 98       	cbi	0x14, 2	; 20
+}
+ 142:	08 95       	ret
+
+00000144 <port_init>:
+
+//Function to Initialize PORTS
+void port_init()
+{
+ MOSFET_switch_config();	
+ 144:	0e 94 95 00 	call	0x12a	; 0x12a <MOSFET_switch_config>
+}
+ 148:	08 95       	ret
+
+0000014a <turn_on_sharp234_wl>:
+
+void turn_on_sharp234_wl (void) //turn on Sharp IR range sensors 2, 3, 4 and white line sensor's red LED
+{
+  PORTG = PORTG & 0xFB;
+ 14a:	a2 98       	cbi	0x14, 2	; 20
+}
+ 14c:	08 95       	ret
+
+0000014e <turn_off_sharp234_wl>:
+
+void turn_off_sharp234_wl (void) //turn off Sharp IR range sensors 2, 3, 4 and white line sensor's red LED
+{
+ PORTG = PORTG | 0x04;
+ 14e:	a2 9a       	sbi	0x14, 2	; 20
+}
+ 150:	08 95       	ret
+
+00000152 <turn_on_sharp15>:
+
+void turn_on_sharp15 (void) //turn on Sharp IR range sensors 1,5
+{
+  PORTH = PORTH & 0xFB;
+ 152:	e2 e0       	ldi	r30, 0x02	; 2
+ 154:	f1 e0       	ldi	r31, 0x01	; 1
+ 156:	80 81       	ld	r24, Z
+ 158:	8b 7f       	andi	r24, 0xFB	; 251
+ 15a:	80 83       	st	Z, r24
+}
+ 15c:	08 95       	ret
+
+0000015e <turn_off_sharp15>:
+
+void turn_off_sharp15 (void) //turn off Sharp IR range sensors 1,5
+{
+ PORTH = PORTH | 0x04;
+ 15e:	e2 e0       	ldi	r30, 0x02	; 2
+ 160:	f1 e0       	ldi	r31, 0x01	; 1
+ 162:	80 81       	ld	r24, Z
+ 164:	84 60       	ori	r24, 0x04	; 4
+ 166:	80 83       	st	Z, r24
+}
+ 168:	08 95       	ret
+
+0000016a <turn_on_ir_proxi_sensors>:
+
+void turn_on_ir_proxi_sensors (void) //turn on IR Proximity sensors
+{
+ PORTH = PORTH & 0xF7;
+ 16a:	e2 e0       	ldi	r30, 0x02	; 2
+ 16c:	f1 e0       	ldi	r31, 0x01	; 1
+ 16e:	80 81       	ld	r24, Z
+ 170:	87 7f       	andi	r24, 0xF7	; 247
+ 172:	80 83       	st	Z, r24
+}
+ 174:	08 95       	ret
+
+00000176 <turn_off_ir_proxi_sensors>:
+
+void turn_off_ir_proxi_sensors (void) //turn off IR Proximity sensors
+{
+ PORTH = PORTH | 0x08;
+ 176:	e2 e0       	ldi	r30, 0x02	; 2
+ 178:	f1 e0       	ldi	r31, 0x01	; 1
+ 17a:	80 81       	ld	r24, Z
+ 17c:	88 60       	ori	r24, 0x08	; 8
+ 17e:	80 83       	st	Z, r24
+}
+ 180:	08 95       	ret
+
+00000182 <turn_on_all_proxy_sensors>:
+
+void turn_on_all_proxy_sensors (void) // turn on Sharp 2, 3, 4, red LED of the white line sensors
+									  // Sharp 1, 5 and IR proximity sensor
+{
+ PORTH = PORTH & 0xF3; //set PORTH 3 and PORTH 1 pins to 0
+ 182:	e2 e0       	ldi	r30, 0x02	; 2
+ 184:	f1 e0       	ldi	r31, 0x01	; 1
+ 186:	80 81       	ld	r24, Z
+ 188:	83 7f       	andi	r24, 0xF3	; 243
+ 18a:	80 83       	st	Z, r24
+ PORTG = PORTG & 0xFB; //set PORTG 2 pin to 0
+ 18c:	a2 98       	cbi	0x14, 2	; 20
+}
+ 18e:	08 95       	ret
+
+00000190 <turn_off_all_proxy_sensors>:
+
+void turn_off_all_proxy_sensors (void) // turn off Sharp 2, 3, 4, red LED of the white line sensors
+									  // Sharp 1, 5 and IR proximity sensor
+{
+ PORTH = PORTH | 0x0C; //set PORTH 3 and PORTH 1 pins to 1
+ 190:	e2 e0       	ldi	r30, 0x02	; 2
+ 192:	f1 e0       	ldi	r31, 0x01	; 1
+ 194:	80 81       	ld	r24, Z
+ 196:	8c 60       	ori	r24, 0x0C	; 12
+ 198:	80 83       	st	Z, r24
+ PORTG = PORTG | 0x04; //set PORTG 2 pin to 1
+ 19a:	a2 9a       	sbi	0x14, 2	; 20
+}
+ 19c:	08 95       	ret
+
+0000019e <init_devices>:
+
+void init_devices (void)
+{
+ cli(); //Clears the global interrupts
+ 19e:	f8 94       	cli
+ port_init();
+ 1a0:	0e 94 a2 00 	call	0x144	; 0x144 <port_init>
+ sei(); //Enables the global interrupts
+ 1a4:	78 94       	sei
+}
+ 1a6:	08 95       	ret
+
+000001a8 <main>:
+
+//Main Function
+int main(void)
+{
+	init_devices();
+ 1a8:	0e 94 cf 00 	call	0x19e	; 0x19e <init_devices>
+	
+	turn_off_all_proxy_sensors();
+ 1ac:	0e 94 c8 00 	call	0x190	; 0x190 <turn_off_all_proxy_sensors>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 1b0:	8f ef       	ldi	r24, 0xFF	; 255
+ 1b2:	9f e7       	ldi	r25, 0x7F	; 127
+ 1b4:	a3 e4       	ldi	r26, 0x43	; 67
+ 1b6:	81 50       	subi	r24, 0x01	; 1
+ 1b8:	90 40       	sbci	r25, 0x00	; 0
+ 1ba:	a0 40       	sbci	r26, 0x00	; 0
+ 1bc:	e1 f7       	brne	.-8      	; 0x1b6 <main+0xe>
+ 1be:	00 c0       	rjmp	.+0      	; 0x1c0 <main+0x18>
+ 1c0:	00 00       	nop
+	_delay_ms(1500);
+
+	turn_on_sharp234_wl();
+ 1c2:	0e 94 a5 00 	call	0x14a	; 0x14a <turn_on_sharp234_wl>
+ 1c6:	8f ef       	ldi	r24, 0xFF	; 255
+ 1c8:	9f e7       	ldi	r25, 0x7F	; 127
+ 1ca:	a3 e4       	ldi	r26, 0x43	; 67
+ 1cc:	81 50       	subi	r24, 0x01	; 1
+ 1ce:	90 40       	sbci	r25, 0x00	; 0
+ 1d0:	a0 40       	sbci	r26, 0x00	; 0
+ 1d2:	e1 f7       	brne	.-8      	; 0x1cc <main+0x24>
+ 1d4:	00 c0       	rjmp	.+0      	; 0x1d6 <main+0x2e>
+ 1d6:	00 00       	nop
+	_delay_ms(1500);
+
+	turn_off_sharp234_wl();
+ 1d8:	0e 94 a7 00 	call	0x14e	; 0x14e <turn_off_sharp234_wl>
+	turn_on_sharp15();
+ 1dc:	0e 94 a9 00 	call	0x152	; 0x152 <turn_on_sharp15>
+ 1e0:	8f ef       	ldi	r24, 0xFF	; 255
+ 1e2:	9f e7       	ldi	r25, 0x7F	; 127
+ 1e4:	a3 e4       	ldi	r26, 0x43	; 67
+ 1e6:	81 50       	subi	r24, 0x01	; 1
+ 1e8:	90 40       	sbci	r25, 0x00	; 0
+ 1ea:	a0 40       	sbci	r26, 0x00	; 0
+ 1ec:	e1 f7       	brne	.-8      	; 0x1e6 <main+0x3e>
+ 1ee:	00 c0       	rjmp	.+0      	; 0x1f0 <main+0x48>
+ 1f0:	00 00       	nop
+	_delay_ms(1500);
+
+	turn_off_sharp15();
+ 1f2:	0e 94 af 00 	call	0x15e	; 0x15e <turn_off_sharp15>
+	turn_on_ir_proxi_sensors();
+ 1f6:	0e 94 b5 00 	call	0x16a	; 0x16a <turn_on_ir_proxi_sensors>
+ 1fa:	8f ef       	ldi	r24, 0xFF	; 255
+ 1fc:	9f e7       	ldi	r25, 0x7F	; 127
+ 1fe:	a3 e4       	ldi	r26, 0x43	; 67
+ 200:	81 50       	subi	r24, 0x01	; 1
+ 202:	90 40       	sbci	r25, 0x00	; 0
+ 204:	a0 40       	sbci	r26, 0x00	; 0
+ 206:	e1 f7       	brne	.-8      	; 0x200 <main+0x58>
+ 208:	00 c0       	rjmp	.+0      	; 0x20a <main+0x62>
+ 20a:	00 00       	nop
+	_delay_ms(1500);
+	
+	turn_off_ir_proxi_sensors();
+ 20c:	0e 94 bb 00 	call	0x176	; 0x176 <turn_off_ir_proxi_sensors>
+ 210:	8f ef       	ldi	r24, 0xFF	; 255
+ 212:	9f e7       	ldi	r25, 0x7F	; 127
+ 214:	a3 e4       	ldi	r26, 0x43	; 67
+ 216:	81 50       	subi	r24, 0x01	; 1
+ 218:	90 40       	sbci	r25, 0x00	; 0
+ 21a:	a0 40       	sbci	r26, 0x00	; 0
+ 21c:	e1 f7       	brne	.-8      	; 0x216 <main+0x6e>
+ 21e:	00 c0       	rjmp	.+0      	; 0x220 <main+0x78>
+ 220:	00 00       	nop
+	_delay_ms(1500);
+
+	turn_on_all_proxy_sensors();
+ 222:	0e 94 c1 00 	call	0x182	; 0x182 <turn_on_all_proxy_sensors>
+ 226:	ff cf       	rjmp	.-2      	; 0x226 <main+0x7e>
+
+00000228 <_exit>:
+ 228:	f8 94       	cli
+
+0000022a <__stop_program>:
+ 22a:	ff cf       	rjmp	.-2      	; 0x22a <__stop_program>
